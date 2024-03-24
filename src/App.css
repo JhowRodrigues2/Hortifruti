@@ -1,0 +1,420 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+.app {
+  min-width: "100%";
+  min-height: "100vh";
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.headerFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00856f;
+  height: 72px;
+  display: flex;
+  color: #dce9e2;
+  font-size: 14px;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;/
+}
+
+.header {
+  background-color: #dce9e2;
+  min-width: "100%";
+  height: "72px";
+  display: flex;
+  color: #dce9e2;
+  font-size: 14;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo img {
+  height: auto;
+  width: 353px;
+}
+
+.menu {
+  display: flex;
+  color: #00856f;
+}
+
+.menuFixed {
+  display: flex;
+  cursor: pointer;
+}
+
+.pedidoButtonHeader {
+  border: 1px solid #00856f;
+  border-radius: 40px;
+  text-align: center;
+  width: 166px;
+  height: 38px;
+  background-color: #dce9e2;
+  color: #00856f;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.pedidoButtonHeaderFixed {
+  border: 1px solid #ffff;
+  border-radius: 40px;
+  text-align: center;
+  width: 166px;
+  height: 38px;
+  background-color: #00856f;
+  color: #ffff;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.listDrawer {
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.pedidoButtonDrawer {
+  width: 140px;
+  height: 40px;
+  border-radius: 40px;
+  color: #00856f;
+  border: 1px solid #00856f;
+  font-weight: 700;
+}
+
+#hero {
+  width: "100%";
+  background-color: #dce9e2;
+  height: 678px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+}
+
+#hero button {
+  background-color: #00856f;
+  width: 200px;
+  height: 52px;
+  border-radius: 40px;
+  color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.text {
+  width: 665px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.woman {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.woman img {
+  width: 95%;
+  height: auto;
+}
+
+.cardNumber {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardNumberArea {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 210px;
+  background-color: #fffaf1;
+  justify-content: space-around;
+  position: absolute;
+}
+
+.cardNumber span {
+  font-size: 48px;
+  font-weight: 700;
+  color: #212529;
+}
+
+.cardNumberText {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 48px;
+  color: #00856f;
+  top: 100px;
+  border-right: 1px solid #00856f;
+}
+
+.cardNumberText:nth-child(3) {
+  border-right: none;
+}
+
+#services {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+
+.cardServicesArea {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: start;
+}
+
+.cardServices {
+  border: 1px solid #dce9e2;
+  width: 405px;
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 6px;
+}
+
+.cardServices img {
+  width: 24px;
+  height: 25px;
+}
+
+#about {
+  width: 100%;
+  height: 734px;
+  background-color: #fffaf1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.aboutText {
+  text-align: left;
+  height: auto;
+  width: 100%;
+  max-width: 573px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow: auto;
+  word-wrap: break-word;
+}
+
+.aboutImage img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.footer {
+  width: 100%;
+  height: 268px;
+  background-color: #00856f;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fffaf1;
+  font-size: 14px;
+}
+
+.footerImgArea {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.footerIcons {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  gap: 20px
+}
+
+.footerText {
+  background-color: #ffff;
+  color: #212529;
+  width: 100%;
+  align-items: center;
+  display: none;
+  height: 50%;
+
+}
+
+.footer button {
+  background-color: #00856f;
+  width: 200px;
+  height: 52px;
+  border-radius: 40px;
+  color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+
+@media screen and (max-width: 810px) {
+  #hero {
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .woman {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .woman img {
+    max-width: 100%; 
+    max-height: 100%;
+  
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardNumber {
+    flex-direction: column;
+  }
+
+  .cardNumberArea {
+    flex-direction: column;
+    height: 470px;
+    width: 327px;
+  }
+
+  .cardNumberText {
+    border-right: none;
+    text-align: center;
+  }
+
+  #services {
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 300px;
+  }
+
+  .cardServicesArea {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    height: auto;
+  }
+
+  .cardServices {
+    width: 275px;
+    height: 271px;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+
+  .aboutImage {
+    order: 2;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+  }
+
+  .footerImgArea {
+    width: 100%;
+    height: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .footerImgArea img {
+    width: 293px;
+  }
+
+  .footerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+
+  .footerIcons {
+    width: 100%;
+    height: 15%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footerIcons img {
+    width: 24px;
+    height: 24px;
+  }
+}
